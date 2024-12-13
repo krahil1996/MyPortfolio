@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1d;
+  color: #f8fafc;
+}
+
+/* navbar Css */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3rem;
+  height: 2.5rem;
+  width: 75%;
+  font-size: 2em;
+  transition: all 0.5s ease-in;
+}
+.brand-logo a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.brand-logo span {
+  color: #ffb200;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.brand-logo :hover {
+  cursor: pointer;
+  color: #ffb200;
+  transition: all 0.5s ease-in-out;
+}
+.navItems {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  height: 2.5rem;
+}
+
+.navItems li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navItems li:hover {
+  color: #ffb200;
+  cursor: pointer;
+  border-bottom: solid 0.2rem #ffb200;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 2.5rem;
+  transition: all 0.3s ease-in;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.GitButton button {
+  min-width: 9rem;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 0.3rem;
+  border: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 178, 0, 1) 30%,
+    rgba(231, 231, 231, 0.278) 100%
+  );
+}
+.GitButton button a {
+  padding: 0.3rem;
+  font-size: 1rem;
+  color: #1a1a1d;
+}
+.GitButton button a:hover {
+  color: #ffffff;
+}
+.GitButton button a i {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+.GitButton button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 178, 0, 1) 30%,
+    rgba(231, 231, 231, 0.278) 100%
+  );
+  box-shadow: #f0b938 5px 4px 7px 1px;
+  transition: all 0.3s linear;
+}
+.GitButton button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+/* About Section */
+
+.About {
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.AboutLeft {
+  max-width: 50%;
+  padding: 1rem;
+}
+.AboutLeft .hfirst {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-weight: 400;
+}
+.AboutLeft .hsecond {
+  font-family: "Merriweather", sans-serif;
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: 900;
+}
+.AboutLeft .hthird {
+  font-family: "Merriweather", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-weight: 400;
+}
+.AboutLeft .hthird span {
+  color: #ffb200;
+}
+.AboutLeft p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+.AboutLeft p b {
+  color: #ffb200;
+  font-weight: 900;
+  word-spacing: 5px;
+  box-shadow: #1a1c1c -3px -4px 8px 0px;
+}
+.btn-profiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Profiles {
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.Profiles .p-btn {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  color: #1a1c1c;
+  background: transparent;
+}
+.Profiles a i {
+  text-decoration: none;
+}
+.github {
+  text-decoration: none;
+  -webkit-text-fill-color: #f1f1f1;
+}
+.btn-cv {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Right Section */
+.AboutRight {
+  max-width: 50%;
+  padding: 1rem;
+}
+.AboutRight img {
+  width: 20rem;
+  border-radius: 50%;
+  box-shadow: #272727 0px 0px 16px 10px;
+}
