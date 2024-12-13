@@ -12,13 +12,12 @@ body {
 /* navbar Css */
 nav {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin: auto;
   padding: 3rem;
-  height: 2.5rem;
+  height: auto;
   width: 75%;
   font-size: 2em;
   transition: all 0.5s ease-in;
@@ -41,7 +40,7 @@ nav {
 }
 .navItems {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style-type: none;
   height: 2.5rem;
@@ -104,8 +103,9 @@ nav {
 /* About Section */
 
 .About {
-  max-width: 70%;
+  max-width: 75%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ nav {
   margin-top: 2rem;
 }
 .AboutLeft {
-  max-width: 50%;
+  max-width: 100vh;
   padding: 1rem;
 }
 .AboutLeft .hfirst {
@@ -162,12 +162,13 @@ nav {
   padding: 0.5rem;
 }
 .Profiles .p-btn {
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
   border-radius: 1.5rem;
   color: #1a1c1c;
   background: transparent;
+  cursor: pointer;
+}
+.Profiles a {
+  font-size: 1.5rem;
 }
 .Profiles a i {
   text-decoration: none;
@@ -183,7 +184,7 @@ nav {
 
 /* Right Section */
 .AboutRight {
-  max-width: 50%;
+  max-width: 100vh;
   padding: 1rem;
 }
 .AboutRight img {
