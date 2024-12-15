@@ -108,14 +108,14 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 /* About Left Section */
 .AboutLeft {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 30%;
+  max-width: 35%;
   padding: 0.5rem;
 }
 .AboutLeft .hfirst {
@@ -223,7 +223,7 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 30%;
+  max-width: 35%;
   padding: 1rem;
 }
 .AboutRight img {
@@ -233,26 +233,32 @@ nav {
 }
 
 /* Skill Section */
-.Skills {
-  margin-top: 3rem;
-  max-width: 100%;
+.Skills-txt {
+  max-width: 70%;
+  margin: 0rem auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
 }
-.Skills h1 {
+.Skills-txt h1 {
+  padding: 1.5rem;
   font-size: 2rem;
-
   font-weight: 400;
   font-family: "Merriweather", serif;
 }
-.Skills h1::after {
+.Skills-txt h1::after {
   content: "";
   display: block;
   border: 1px solid #ffb200;
   width: 4rem;
   margin: auto;
   box-shadow: #ffb200 0px 0px 9px 1px;
+}
+.Skills-txt p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 0rem;
+  text-align: center;
 }
