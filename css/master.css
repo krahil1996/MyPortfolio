@@ -270,6 +270,7 @@ nav {
 .skills-holder {
   width: 75%;
   margin: 1rem auto;
+  padding: 1rem 0rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
