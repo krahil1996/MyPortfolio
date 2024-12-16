@@ -103,7 +103,9 @@ nav {
 /* About Section */
 
 .About {
-  max-width: 100%;
+  width: 60%;
+  min-width: 10rem;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -115,24 +117,25 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 35%;
   padding: 0.5rem;
+  width: 50%;
+  min-width: 27rem;
 }
 .AboutLeft .hfirst {
   font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0.5rem;
   font-weight: 400;
 }
 .AboutLeft .hsecond {
   font-family: "Merriweather", sans-serif;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 0.5rem;
   font-weight: 900;
 }
 .AboutLeft .hthird {
   font-family: "Merriweather", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0.5rem;
   font-weight: 400;
 }
@@ -141,7 +144,7 @@ nav {
 }
 .AboutLeft p {
   font-family: "Merriweather", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
   font-weight: 300;
   text-align: justify;
@@ -220,10 +223,12 @@ nav {
 
 /* Right Section */
 .AboutRight {
+  width: auto;
+  min-width: 27rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 35%;
+  align-content: center;
   padding: 1rem;
 }
 .AboutRight img {
@@ -257,8 +262,60 @@ nav {
 }
 .Skills-txt p {
   font-family: "Merriweather", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   padding: 1rem 0rem;
   text-align: center;
+}
+.skills-holder {
+  width: 75%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.skill-type-box {
+  width: 25%;
+  min-width: 27rem;
+  min-height: 20rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid #ffb200;
+  border-radius: 0.5rem;
+}
+.skill-type-box h1 {
+  font-weight: 900;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+}
+.skill-type-box h1::after {
+  content: " ";
+  display: block;
+  width: 6rem;
+  margin: auto;
+  border: 1px solid #454646;
+}
+.skill-list ul {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 1rem 0.5rem;
+  border: 1px solid #ffb200;
+  border-radius: 0.3rem;
 }
