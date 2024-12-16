@@ -278,7 +278,7 @@ nav {
 .skill-type-box {
   width: 25%;
   min-width: 27rem;
-  min-height: 20rem !important;
+  min-height: 18rem !important;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -311,11 +311,12 @@ nav {
   justify-content: center;
 }
 .skill-list li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   list-style-type: none;
-  padding: 1rem 0.5rem;
   border: 1px solid #ffb200;
   border-radius: 0.3rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+}
+.skill-list li i {
+  padding-right: 0.5rem;
 }
