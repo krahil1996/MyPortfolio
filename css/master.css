@@ -8,7 +8,13 @@ body {
   background-color: #1a1a1d;
   color: #f8fafc;
 }
-
+section h1,
+h2,
+h3,
+p,
+li {
+  user-select: none;
+}
 /* navbar Css */
 nav {
   display: flex;
@@ -20,7 +26,7 @@ nav {
   height: auto;
   width: 75%;
   font-size: 2em;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 .brand-logo a {
   text-decoration: none;
@@ -275,6 +281,24 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+}
+.skill-type-box {
+  width: 25%;
+  min-width: 27rem;
+  min-height: 18rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ffb200;
+  border-radius: 0.5rem;
+  box-shadow: inset #726c6c 1px 1px 6px 1px;
+  transition: all 0.5s ease-out;
+}
+.skill-type-box:hover {
+  background-color: rgb(2, 107, 72);
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transition: 2s;
 }
 .skill-type-box {
   width: 25%;
