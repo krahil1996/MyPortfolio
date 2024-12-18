@@ -109,8 +109,7 @@ nav {
 /* About Section */
 
 .About {
-  width: 60%;
-  min-width: 10rem;
+  max-width: 70rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -124,8 +123,7 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0.5rem;
-  width: 50%;
-  min-width: 27rem;
+  max-width: 40rem;
 }
 .AboutLeft .hfirst {
   font-family: "Roboto Mono", monospace;
@@ -163,15 +161,12 @@ nav {
 }
 .btn-profiles {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.btn-profiles {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 .Profiles {
   padding: 0.5rem;
 }
@@ -229,8 +224,7 @@ nav {
 
 /* Right Section */
 .AboutRight {
-  width: auto;
-  min-width: 27rem;
+  max-width: 20rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -244,7 +238,7 @@ nav {
 }
 
 /* Skill Section */
-.Skills-txt {
+.Section-head-txt {
   max-width: 65%;
   margin: 0rem auto;
   display: flex;
@@ -252,13 +246,13 @@ nav {
   flex-wrap: wrap;
   align-items: center;
 }
-.Skills-txt h1 {
+.Section-head-txt h1 {
   padding: 1.5rem;
   font-size: 2rem;
   font-weight: 400;
   font-family: "Merriweather", serif;
 }
-.Skills-txt h1::after {
+.Section-head-txt h1::after {
   content: "";
   display: block;
   border: 1px solid #ffb200;
@@ -266,7 +260,7 @@ nav {
   margin: auto;
   box-shadow: #ffb200 0px 0px 9px 1px;
 }
-.Skills-txt p {
+.Section-head-txt p {
   font-family: "Merriweather", sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -274,7 +268,6 @@ nav {
   text-align: center;
 }
 .skills-holder {
-  width: 75%;
   margin: 1rem auto;
   padding: 1rem 0rem;
   display: flex;
@@ -283,35 +276,22 @@ nav {
   gap: 2rem;
 }
 .skill-type-box {
-  width: 25%;
-  min-width: 27rem;
-  min-height: 18rem !important;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #ffb200;
+  margin: 0.5rem;
+  max-width: 30rem;
+  min-height: 20rem;
+  /* border: 2px solid #ffb200; */
+  border: 2px solid #1f1f1f;
   border-radius: 0.5rem;
   box-shadow: inset #726c6c 1px 1px 6px 1px;
   transition: all 0.5s ease-out;
 }
 .skill-type-box:hover {
-  background-color: rgb(2, 107, 72);
+  background-color: rgb(1, 43, 29);
   transform: rotate3d(0.5, 1, 0, 30deg);
   transition: 2s;
 }
-.skill-type-box {
-  width: 25%;
-  min-width: 27rem;
-  min-height: 18rem !important;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #ffb200;
-  border-radius: 0.5rem;
-}
 .skill-type-box h1 {
+  text-align: center;
   padding: 1.5rem 0rem;
   font-weight: 900;
   font-variant: small-caps;
@@ -337,11 +317,58 @@ nav {
   display: flex;
   align-items: center;
   list-style-type: none;
-  border: 1px solid #ffb200;
+  /* border: 1px solid #ffb200; */
+  border: 1px solid #585856;
   border-radius: 0.3rem;
   padding: 1rem;
   font-size: 1.2rem;
 }
 .skill-list li i {
   padding-right: 0.5rem;
+}
+
+/* project section */
+.project-box {
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 30rem;
+  min-height: 20rem;
+  /* border: 2px solid #ffb200; */
+  border: 2px solid #1f1f1f;
+  border-radius: 0.5rem;
+  box-shadow: #3a3838 1px 1px 9px 2px;
+  transition: all 0.5s ease-out;
+}
+.project-box img {
+  width: 30rem;
+  max-width: 27rem;
+  height: 15rem;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  transition: all 0.5s ease-in-out;
+}
+.project-box img:hover {
+  transform: scale(1.1);
+  /* transition: 5s; */
+}
+.project-box h1 {
+  text-align: center;
+  padding: 1.5rem 0rem;
+  font-weight: 900;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+}
+.project-box h1::after {
+  content: " ";
+  display: block;
+  width: 6rem;
+  margin: auto;
+  border: 1px solid #454646;
+}
+.Project-btn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
