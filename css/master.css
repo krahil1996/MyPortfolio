@@ -113,8 +113,9 @@ nav {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 /* About Left Section */
 .AboutLeft {
@@ -122,8 +123,7 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0.5rem;
-  width: 56%;
-  min-width: 30rem;
+  max-width: 40rem;
 }
 .AboutLeft .hfirst {
   font-family: "Roboto Mono", monospace;
@@ -224,8 +224,7 @@ nav {
 
 /* Right Section */
 .AboutRight {
-  width: auto;
-  min-width: 27rem;
+  max-width: 20rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -269,7 +268,6 @@ nav {
   text-align: center;
 }
 .skills-holder {
-  width: 75%;
   margin: 1rem auto;
   padding: 1rem 0rem;
   display: flex;
@@ -342,8 +340,8 @@ nav {
   transition: all 0.5s ease-out;
 }
 .project-box img {
-  width: 30rem;
-  max-width: 27rem;
+  min-width: 27rem;
+  width: 29rem;
   height: 15rem;
   padding: 0.5rem;
   border-radius: 0.8rem;
