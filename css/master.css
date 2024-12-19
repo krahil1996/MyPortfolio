@@ -109,7 +109,7 @@ nav {
 /* About Section */
 
 .About {
-  max-width: 70rem;
+  max-width: 60rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -123,7 +123,7 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0.5rem;
-  max-width: 40rem;
+  max-width: 35rem;
 }
 .AboutLeft .hfirst {
   font-family: "Roboto Mono", monospace;
@@ -147,13 +147,14 @@ nav {
   color: #ffb200;
 }
 .AboutLeft p {
-  font-family: "Merriweather", sans-serif;
-  font-size: 1.2rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
   padding: 0.5rem;
   font-weight: 300;
   text-align: justify;
 }
 .AboutLeft p b {
+  font-family: "popins", sans-serif;
   color: #ffb200;
   font-weight: 900;
   word-spacing: 5px;
@@ -269,11 +270,11 @@ nav {
 }
 .skills-holder {
   margin: 1rem auto;
-  padding: 1rem 0rem;
+  /* padding: 1rem 0rem; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .skill-type-box {
   margin: 0.5rem;
@@ -388,4 +389,42 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+/* contact section */
+.frm-contact form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: #3a3838 1px 1px 9px 2px;
+  transition: all 0.3s ease;
+  margin: 1rem auto;
+  max-width: 40rem;
+  width: 100%;
+}
+.frm-contact form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: #3a3838 1px 1px 9px 2px;
+  transition: all 0.3s ease;
+  margin: 1rem auto;
+  max-width: 40rem;
+  width: 100%;
+}
+.frm-contact input,textarea{
+  width: initial;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none !important;
+  font-size: 1rem;
+  resize: vertical;
+}
+.frm-contact button{
+  font-size: large;
+  border-radius: 10px !important;
 }
