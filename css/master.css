@@ -184,6 +184,12 @@ nav {
   font-size: 2rem;
   color: white !important;
 }
+.Profiles a i:hover {
+  transform: scale(1.4);
+  /* transition: all 0.3 ease-in-out; */
+  transform-style: preserve-3d;
+  transition: 1s;
+}
 .instagram {
   background-image: #833ab4;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
